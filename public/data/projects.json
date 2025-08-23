@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Weblocks – Full Stack Cloud App",
+    "description": "Cloud-based user and inventory management app with modular microservices.",
+    "tech": ["Django", "Docker", "CI/CD", "AWS"],
+    "github": "https://github.com/username/weblocks"
+  },
+  {
+    "title": "ETL Automation Pipelines",
+    "description": "Serverless data pipelines using AWS Glue, Lambda, S3 for automated ingestion.",
+    "tech": ["Python", "AWS", "Step Functions"]
+  }
+]
