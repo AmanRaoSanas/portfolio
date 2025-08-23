@@ -1,17 +1,16 @@
 import { useState } from 'react'
+import resumePdf from '/src/assets/resume.pdf' // import static asset
 
 export default function Resume() {
   const [showModal, setShowModal] = useState(false)
-  const BASE_URL = process.env.PUBLIC_URL; // GitHub Pages base URL
 
   return (
     <section id="resume" className="p-8 max-w-4xl mx-auto mt-8">
       <h2 className="text-3xl font-semibold mb-6">Resume</h2>
 
       <div className="flex gap-4 items-center">
-        {/* ✅ Download Button with base URL */}
         <a
-          href={`${BASE_URL}/resume.pdf`}
+          href={resumePdf}
           download="My_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
@@ -20,7 +19,6 @@ export default function Resume() {
           Download Resume
         </a>
 
-        {/* Preview Button */}
         <button
           onClick={() => setShowModal(true)}
           className="bg-gray-300 dark:bg-gray-700 dark:text-white px-4 py-2 rounded hover:bg-gray-400 dark:hover:bg-gray-600"
@@ -39,7 +37,7 @@ export default function Resume() {
               ×
             </button>
             <iframe
-              src={`${BASE_URL}/resume.pdf`}
+              src={resumePdf}
               title="Resume Preview"
               className="w-full h-full border-none rounded"
             />
